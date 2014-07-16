@@ -1,4 +1,4 @@
-def numbers(n):
+def easynumbers(n):
     array = []
     array_temp = []
     for x in range(2,n+1):
@@ -21,5 +21,13 @@ def numbers(n):
             array.remove(key)
     #print(p)
     return array
-x = numbers(100)
+def maximum_prime(n):
+    maxNum = 0
+    x = easynumbers(n)
+    for i in x:
+        if n%i == 0:
+            maxNum = i
+    return maxNum
+
+x = maximum_prime(70)
 print(x)
