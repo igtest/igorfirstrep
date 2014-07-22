@@ -1,7 +1,11 @@
 import random, string
 
+AMOUNT_OF_STRING_IN_PHONEBOOK = 100000
+
 def return_number():
-    phone = random.randint(1000000,9999999)
+    MIN_NUMBER = 1000000
+    MAX_NUMBER = 9999999
+    phone = random.randint(MIN_NUMBER,MAX_NUMBER)
     return phone
 def return_name():
     size = random.randint(4,10)
@@ -12,7 +16,7 @@ def return_name():
 def gen_phoneBook():
     phone_book = []
     index = 0
-    while index < 100000:
+    while index < AMOUNT_OF_STRING_IN_PHONEBOOK:
         phone = return_number()
         name = return_name()
         if phone in phone_book or name in phone_book:
@@ -27,7 +31,7 @@ def gen_phoneBook():
 
 def gen_phoneBookFaster():
     phone_book = set()
-    while len(phone_book) < 100000:
+    while len(phone_book) < AMOUNT_OF_STRING_IN_PHONEBOOK:
         phone = return_number()
         name = return_name()
         phone_book.add((phone, name))
