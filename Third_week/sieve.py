@@ -21,4 +21,17 @@ def sieve(n):
             array.remove(key)
     return array
 
-print(sieve(1000))
+##print(sieve(1000))
+
+
+def sieve_n(n):
+    numbers = list(range(2,n+1))
+    step = 2
+    while (step != numbers[-1]):
+        for i in numbers:
+            if (i%step == 0 and i != step):
+                numbers.remove(i)
+        step = numbers[numbers.index(step)+1]
+    return numbers
+
+print(sieve_n(20))
