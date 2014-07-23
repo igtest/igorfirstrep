@@ -10,7 +10,7 @@ def is_number(string):
     if '.' in subString:
         index = subString.index('.')
         subString = subString[:index] + subString[index+1:]
-    elif ',' in sunString:
+    elif ',' in subString:
         index = subString.index(',')
         subString = subString[:index] + subString[index+1:]
     if subString.isdigit():
