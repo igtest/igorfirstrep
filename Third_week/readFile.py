@@ -1,6 +1,6 @@
 def readInDic():
     d = {}
-    with open("phone.txt") as f:
+    with open("phone_new.txt") as f:
         for line in f:
             number = line[1:8]
             name = line[11:-3]
@@ -54,33 +54,33 @@ def get_nameGenerator(phone):
         
 import time
 ##get_nameInTuplesList('2253431')
-def compare_functions(f, g, v, arg):
-  i = 0
-  t1 = 0
-  t2 = 0
-  t3 = 0
-  while i < 50:
-    last_time = time.clock()
-    f(arg)
-    t1 += time.clock() - last_time
-    i += 1
-  while i < 100:
-    last_time = time.clock()
-    g(arg)
-    t2 += time.clock() - last_time
-    i += 1
-  while i < 150:
-    last_time = time.clock()
-    v(arg)
-    t3 += time.clock() - last_time
-    i += 1
-  print("1st func: " + str(t1))
-  print("2nd func: " + str(t2))
-  print("3nd func: " + str(t3))
-  print(t2 / t1)
-
-compare_functions(get_nameInDic, get_nameGenerator, get_nameInTuplesList, '7719351')
-
+##def compare_functions(f, g, v, arg):
+##  i = 0
+##  t1 = 0
+##  t2 = 0
+##  t3 = 0
+##  while i < 50:
+##    last_time = time.clock()
+##    f(arg)
+##    t1 += time.clock() - last_time
+##    i += 1
+##  while i < 100:
+##    last_time = time.clock()
+##    g(arg)
+##    t2 += time.clock() - last_time
+##    i += 1
+##  while i < 150:
+##    last_time = time.clock()
+##    v(arg)
+##    t3 += time.clock() - last_time
+##    i += 1
+##  print("1st func: " + str(t1))
+##  print("2nd func: " + str(t2))
+##  print("3nd func: " + str(t3))
+##  print(t2 / t1)
+##
+##compare_functions(get_nameInDic, get_nameGenerator, get_nameInTuplesList, '7719351')
+get_nameInDic('2624117')
 ##def get_nameInTuplesListSort(phone):
 ##    #book = readInTuplesList()
 ##    numberList = [(line[0],line[1]) for line in open("phone.txt") if line[0] == phone]
