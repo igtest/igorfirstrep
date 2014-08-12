@@ -1,0 +1,13 @@
+
+   Count of messages being sent without waiting in queue:
+No values in statistic
+
+Count of             read request messages received:
+No values in 
+ statistic
+
+ Count of read request answers sent :
+No values in statistic
+
+Discarded items (not used for computation):0
+
