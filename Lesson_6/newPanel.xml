@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panel>
+ <properties>
+  <prop name="Size">1919 849</prop>
+  <prop name="BackColor">TN_ScreenBackground</prop>
+  <prop name="RefPoint">4 746</prop>
+  <prop name="InitAndTermRef">True</prop>
+  <prop name="SendClick">False</prop>
+  <prop name="layoutType">None</prop>
+ </properties>
+ <shapes>
+  <shape shapeType="LINE" layerId="0" Name="LINE22">
+   <properties>
+    <prop name="serialId">838</prop>
+    <prop name="RefPoint">1837 612</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">68</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1837 612</prop>
+    <prop name="End">1837 480</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE23">
+   <properties>
+    <prop name="serialId">839</prop>
+    <prop name="RefPoint">1793 795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">69</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1793 795</prop>
+    <prop name="End">1793 663</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE16">
+   <properties>
+    <prop name="serialId">656</prop>
+    <prop name="RefPoint">1234 613</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">45</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1234 613</prop>
+    <prop name="End">1805 613</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE5">
+   <properties>
+    <prop name="serialId">62</prop>
+    <prop name="RefPoint">73 699</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">8</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">73 699</prop>
+    <prop name="End">73 615</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE1">
+   <properties>
+    <prop name="serialId">1</prop>
+    <prop name="RefPoint">4 796</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">0</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">4 796</prop>
+    <prop name="End">1775 796</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE2">
+   <properties>
+    <prop name="serialId">2</prop>
+    <prop name="RefPoint">216 796</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">1</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">216 796</prop>
+    <prop name="End">216 615</prop>
+   </properties>
+  </shape>
+  <reference referenceId="0" Name="PANEL_REF216" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">366 698</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 -528 1132</prop>
+    <prop name="TabOrder">2</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE3">
+   <properties>
+    <prop name="serialId">20</prop>
+    <prop name="RefPoint">74.2348 699</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">3</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">74 699</prop>
+    <prop name="End">215 699</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE4">
+   <properties>
+    <prop name="serialId">21</prop>
+    <prop name="RefPoint">73 615</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">4</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">73 615</prop>
+    <prop name="End">644 615</prop>
+   </properties>
+  </shape>
+  <reference referenceId="1" Name="PANEL_REF218" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">278 430</prop>
+    <prop name="Geometry">1 0 0 1 -166 224</prop>
+    <prop name="TabOrder">5</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="2" Name="PANEL_REF217" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">152 390</prop>
+    <prop name="Geometry">1 0 0 1 -40 178</prop>
+    <prop name="TabOrder">6</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="3" Name="PANEL_REF3" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/pigtrap_in.pnl</prop>
+    <prop name="Location">17 534</prop>
+    <prop name="Geometry">1 0 0 1 20 59</prop>
+    <prop name="TabOrder">7</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="4" Name="PANEL_REF214" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">320 509</prop>
+    <prop name="Geometry">1 0 0 1 7 59</prop>
+    <prop name="TabOrder">9</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="5" Name="PANEL_REF219" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">303 748</prop>
+    <prop name="Geometry">1 0 0 1 -46 0</prop>
+    <prop name="TabOrder">10</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="6" Name="PANEL_REF8" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">371 748</prop>
+    <prop name="Geometry">1 0 0 1 -44 0</prop>
+    <prop name="TabOrder">11</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="7" Name="PANEL_REF7" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">438 748</prop>
+    <prop name="Geometry">1 0 0 1 -42 0</prop>
+    <prop name="TabOrder">12</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE6">
+   <properties>
+    <prop name="serialId">131</prop>
+    <prop name="RefPoint">497 796</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">13</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">497 796</prop>
+    <prop name="End">497 614</prop>
+   </properties>
+  </shape>
+  <reference referenceId="8" Name="PANEL_REF210" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">645 680</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 -228.197 1411.13</prop>
+    <prop name="TabOrder">14</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE7">
+   <properties>
+    <prop name="serialId">149</prop>
+    <prop name="RefPoint">497.235 698.522</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">15</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">497 699</prop>
+    <prop name="End">638 699</prop>
+   </properties>
+  </shape>
+  <reference referenceId="9" Name="PANEL_REF212" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">574 624</prop>
+    <prop name="Geometry">1 0 0 1 -33 30</prop>
+    <prop name="TabOrder">16</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE8">
+   <properties>
+    <prop name="serialId">167</prop>
+    <prop name="RefPoint">638 699</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">17</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">638 699</prop>
+    <prop name="End">638 615</prop>
+   </properties>
+  </shape>
+  <reference referenceId="10" Name="PANEL_REF10" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/PigTrap_Out.pnl</prop>
+    <prop name="Location">638 537</prop>
+    <prop name="Geometry">1 0 0 1 -25 59</prop>
+    <prop name="TabOrder">18</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="11" Name="PANEL_REF213" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">573 507</prop>
+    <prop name="Geometry">1 0 0 1 -32 61</prop>
+    <prop name="TabOrder">19</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="12" Name="PANEL_REF6" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">575 747</prop>
+    <prop name="Geometry">1 0 0 1 -34 1</prop>
+    <prop name="TabOrder">20</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="13" Name="PANEL_REF108" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">147 359</prop>
+    <prop name="Geometry">1 0 0 1 -34.8486 72</prop>
+    <prop name="TabOrder">21</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="14" Name="PANEL_REF105" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">354 359</prop>
+    <prop name="Geometry">1 0 0 1 -33 72</prop>
+    <prop name="TabOrder">22</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="15" Name="PANEL_REF91" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">570 365</prop>
+    <prop name="Geometry">1 0 0 1 -33 66</prop>
+    <prop name="TabOrder">23</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="16" Name="PANEL_REF215" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">343 617</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 -448 1020</prop>
+    <prop name="TabOrder">24</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="17" Name="PANEL_REF211" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">369 617</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 -166 1045.48</prop>
+    <prop name="TabOrder">25</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="18" Name="PANEL_REF73" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">871 380</prop>
+    <prop name="Geometry">1 0 0 1 -162 51</prop>
+    <prop name="TabOrder">26</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="19" Name="PANEL_REF66" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">928 364</prop>
+    <prop name="Geometry">1 0 0 1 -126 67</prop>
+    <prop name="TabOrder">27</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="20" Name="PANEL_REF61" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">1066 363</prop>
+    <prop name="Geometry">1 0 0 1 -164 68</prop>
+    <prop name="TabOrder">28</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="21" Name="PANEL_REF55" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">1203 370</prop>
+    <prop name="Geometry">1 0 0 1 -204 61</prop>
+    <prop name="TabOrder">29</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="22" Name="PANEL_REF5" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1144 747</prop>
+    <prop name="Geometry">1 0 0 1 -215 1</prop>
+    <prop name="TabOrder">30</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="23" Name="PANEL_REF49" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/SKZ.pnl</prop>
+    <prop name="Location">1345 362</prop>
+    <prop name="Geometry">1 0 0 1 -252 69</prop>
+    <prop name="TabOrder">31</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="24" Name="PANEL_REF5a" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1431 778</prop>
+    <prop name="Geometry">1 0 0 1 -252 1</prop>
+    <prop name="TabOrder">32</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="25" Name="PANEL_REF25" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/BorderPKU.pnl</prop>
+    <prop name="Location">813 344</prop>
+    <prop name="Geometry">1 0 0 1 -37 3</prop>
+    <prop name="TabOrder">32</prop>
+   </properties>
+  </reference>
+  <reference referenceId="26" Name="PANEL_REF26" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/BorderPKU.pnl</prop>
+    <prop name="Location">911 347</prop>
+    <prop name="Geometry">1 0 0 1 -37 0</prop>
+    <prop name="TabOrder">33</prop>
+   </properties>
+  </reference>
+  <reference referenceId="27" Name="PANEL_REF27" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/BorderPKU.pnl</prop>
+    <prop name="Location">1009 341</prop>
+    <prop name="Geometry">1 0 0 1 -37 6</prop>
+    <prop name="TabOrder">34</prop>
+   </properties>
+  </reference>
+  <reference referenceId="28" Name="PANEL_REF28" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/BorderPKU.pnl</prop>
+    <prop name="Location">1104 324</prop>
+    <prop name="Geometry">1 0 0 1 -37 23</prop>
+    <prop name="TabOrder">35</prop>
+   </properties>
+  </reference>
+  <reference referenceId="29" Name="PANEL_REF29" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/BorderPKU.pnl</prop>
+    <prop name="Location">1206 335</prop>
+    <prop name="Geometry">1 0 0 1 -37 12</prop>
+    <prop name="TabOrder">36</prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE13">
+   <properties>
+    <prop name="serialId">579</prop>
+    <prop name="RefPoint">1219.09 697.438</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">42</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1219 697</prop>
+    <prop name="End">1219 613</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE14">
+   <properties>
+    <prop name="serialId">580</prop>
+    <prop name="RefPoint">1362.09 795</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">43</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1362 795</prop>
+    <prop name="End">1362 614</prop>
+   </properties>
+  </shape>
+  <reference referenceId="30" Name="PANEL_REF30" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">366 698</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 618.09 1130.44</prop>
+    <prop name="TabOrder">37</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE15">
+   <properties>
+    <prop name="serialId">598</prop>
+    <prop name="RefPoint">1220.33 697.438</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">44</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1220 697</prop>
+    <prop name="End">1361 697</prop>
+   </properties>
+  </shape>
+  <reference referenceId="31" Name="PANEL_REF31" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">278 430</prop>
+    <prop name="Geometry">1 0 0 1 980.09 222.438</prop>
+    <prop name="TabOrder">38</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="32" Name="PANEL_REF32" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">152 390</prop>
+    <prop name="Geometry">1 0 0 1 1106.09 176.438</prop>
+    <prop name="TabOrder">39</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="33" Name="PANEL_REF33" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/pigtrap_in.pnl</prop>
+    <prop name="Location">17 534</prop>
+    <prop name="Geometry">1 0 0 1 1166.09 57.4377</prop>
+    <prop name="TabOrder">40</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="34" Name="PANEL_REF34" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">343 617</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 698.09 1018.44</prop>
+    <prop name="TabOrder">41</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="35" Name="PANEL_REF35" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/River.pnl</prop>
+    <prop name="Location">1422 607</prop>
+    <prop name="Geometry">1 0 0 2.64847 143.5 -1173.81</prop>
+    <prop name="TabOrder">46</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$RiverName</prop>
+      <prop name="Value">$RiverName</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="36" Name="PANEL_REF36" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1399 749</prop>
+    <prop name="TabOrder">47</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="37" Name="PANEL_REF37" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/DPS.pnl</prop>
+    <prop name="Location">1449 737</prop>
+    <prop name="Geometry">1 0 0 1 12 0</prop>
+    <prop name="TabOrder">48</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="38" Name="PANEL_REF38" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1501 748</prop>
+    <prop name="TabOrder">49</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="39" Name="PANEL_REF39" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1423 566</prop>
+    <prop name="Geometry">1 0 0 1 76.5 -3</prop>
+    <prop name="TabOrder">50</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE17">
+   <properties>
+    <prop name="serialId">723</prop>
+    <prop name="RefPoint">1420.24 612.224</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">51</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1420 612</prop>
+    <prop name="End">1420 480</prop>
+   </properties>
+  </shape>
+  <reference referenceId="40" Name="PANEL_REF40" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">343 617</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 757 904</prop>
+    <prop name="TabOrder">52</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE18">
+   <properties>
+    <prop name="serialId">741</prop>
+    <prop name="RefPoint">1421.84 480</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">53</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1422 480</prop>
+    <prop name="End">1689 480</prop>
+   </properties>
+  </shape>
+  <reference referenceId="41" Name="PANEL_REF41" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1495 462</prop>
+    <prop name="TabOrder">54</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="42" Name="PANEL_REF42" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1495 462</prop>
+    <prop name="Geometry">1 0 0 1 104.5 0</prop>
+    <prop name="TabOrder">55</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE19">
+   <properties>
+    <prop name="serialId">752</prop>
+    <prop name="RefPoint">1689 612.375</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">57</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1689 612</prop>
+    <prop name="End">1689 480</prop>
+   </properties>
+  </shape>
+  <reference referenceId="43" Name="PANEL_REF43" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">343 617</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 1025.76 904</prop>
+    <prop name="TabOrder">56</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="44" Name="PANEL_REF44" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1423 566</prop>
+    <prop name="Geometry">1 0 0 1 172.955 -2.52208</prop>
+    <prop name="TabOrder">58</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="45" Name="PANEL_REF45" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/Valve.pnl</prop>
+    <prop name="Location">1501 748</prop>
+    <prop name="Geometry">1 0 0 1 94.9555 0.47792</prop>
+    <prop name="TabOrder">59</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="46" Name="PANEL_REF46" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/pigtrap_in.pnl</prop>
+    <prop name="Location">1758 774</prop>
+    <prop name="TabOrder">60</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="47" Name="PANEL_REF47" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/pigtrap_in.pnl</prop>
+    <prop name="Location">1753 599</prop>
+    <prop name="Geometry">1 0 0 1 42 -9</prop>
+    <prop name="TabOrder">61</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE20">
+   <properties>
+    <prop name="serialId">816</prop>
+    <prop name="RefPoint">1735 612</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">62</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1735 612</prop>
+    <prop name="End">1735 480</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE21">
+   <properties>
+    <prop name="serialId">817</prop>
+    <prop name="RefPoint">1681.28 795.112</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">63</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1681 795</prop>
+    <prop name="End">1681 663</prop>
+   </properties>
+  </shape>
+  <reference referenceId="48" Name="PANEL_REF48" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1742 596</prop>
+    <prop name="TabOrder">64</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="49" Name="PANEL_REF49" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1707 779</prop>
+    <prop name="TabOrder">65</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="50" Name="PANEL_REF50" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1736 697</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 968 2489</prop>
+    <prop name="TabOrder">66</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="51" Name="PANEL_REF51" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1752 498</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 1220.84 2310.45</prop>
+    <prop name="TabOrder">67</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE24">
+   <properties>
+    <prop name="serialId">840</prop>
+    <prop name="RefPoint">1734 479</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">70</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1734 479</prop>
+    <prop name="End">1875 479</prop>
+   </properties>
+  </shape>
+  <shape shapeType="LINE" layerId="0" Name="LINE25">
+   <properties>
+    <prop name="serialId">841</prop>
+    <prop name="RefPoint">1682 663</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">71</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1682 663</prop>
+    <prop name="End">1876 663</prop>
+   </properties>
+  </shape>
+  <reference referenceId="52" Name="PANEL_REF52" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1752 498</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 1323 2311.05</prop>
+    <prop name="TabOrder">72</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="53" Name="PANEL_REF53" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1752 498</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 1279 2504.59</prop>
+    <prop name="TabOrder">73</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="LINE" layerId="0" Name="LINE26">
+   <properties>
+    <prop name="serialId">852</prop>
+    <prop name="RefPoint">1876 663</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">{0,0,0}</prop>
+    <prop name="BackColor">{255,255,255}</prop>
+    <prop name="TabOrder">74</prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,2]</prop>
+    <prop name="Start">1876 663</prop>
+    <prop name="End">1876 334</prop>
+   </properties>
+  </shape>
+  <reference referenceId="54" Name="PANEL_REF54" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/ValveNoTM.pnl</prop>
+    <prop name="Location">1683 323</prop>
+    <prop name="Geometry">6.12323e-17 -1 1 6.12323e-17 1537 2130.59</prop>
+    <prop name="TabOrder">75</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$SW_Name</prop>
+      <prop name="Value">$SW_Name</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <reference referenceId="55" Name="PANEL_REF55" parentSerial="-1">
+   <properties>
+    <prop name="FileName">TN_elems/PS_simple.pnl</prop>
+    <prop name="Location">1851 310</prop>
+    <prop name="TabOrder">76</prop>
+    <prop name="dollarParameters">
+     <prop name="dollarParameter">
+      <prop name="Dollar">$DP</prop>
+      <prop name="Value">$DP</prop>
+     </prop>
+     <prop name="dollarParameter">
+      <prop name="Dollar">$naviToPanel</prop>
+      <prop name="Value">$naviToPanel</prop>
+     </prop>
+    </prop>
+   </properties>
+  </reference>
+  <shape shapeType="PRIMITIVE_TEXT" layerId="0" Name="PRIMITIVE_TEXT4">
+   <properties>
+    <prop name="serialId">866</prop>
+    <prop name="RefPoint">1833 281</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_WindowText</prop>
+    <prop name="BackColor">_Window</prop>
+    <prop name="TabOrder">78</prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Fixed" horizontal="Fixed"/>
+    </prop>
+    <prop name="DashBackColor">_Transparent</prop>
+    <prop name="AntiAliased">True</prop>
+    <prop name="LineType">[solid,oneColor,JoinBevel,CapButt,1]</prop>
+    <prop name="FillType">[outline]</prop>
+    <prop name="Location">1833 281</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+     <prop name="en_US.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Text">
+     <prop name="ru_RU.utf8">Черкассы</prop>
+     <prop name="en_US.utf8">Черкассы</prop>
+    </prop>
+    <prop name="Distance">2</prop>
+    <prop name="BorderOffset">2</prop>
+    <prop name="Bordered">False</prop>
+    <prop name="Fit">True</prop>
+    <prop name="TextFormat">[0s,,,ALIGNMENT_BEGINNING]</prop>
+   </properties>
+  </shape>
+  <shape shapeType="GENERIC" layerId="0" Name="valve_ewo1">
+   <properties>
+    <prop name="serialId">1579</prop>
+    <prop name="RefPoint">298.5 263</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">79</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+     <prop name="en_US.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">299 263</prop>
+    <prop name="Size">121 121</prop>
+    <prop name="ObjectType">valve.ewo</prop>
+   </properties>
+  </shape>
+  <shape shapeType="GENERIC" layerId="0" Name="valve_v_ewo1">
+   <properties>
+    <prop name="serialId">1580</prop>
+    <prop name="RefPoint">492 263</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">80</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+     <prop name="en_US.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">492 263</prop>
+    <prop name="Size">121 121</prop>
+    <prop name="ObjectType">valve_v.ewo</prop>
+   </properties>
+  </shape>
+  <shape shapeType="GENERIC" layerId="0" Name="sw_ewo1">
+   <properties>
+    <prop name="serialId">1581</prop>
+    <prop name="RefPoint">280 298</prop>
+    <prop name="Enable">True</prop>
+    <prop name="Visible">True</prop>
+    <prop name="ForeColor">_3DText</prop>
+    <prop name="BackColor">_3DFace</prop>
+    <prop name="TabOrder">81</prop>
+    <prop name="BorderStyle">Normal</prop>
+    <prop name="sizePolicy">
+     <sizePolicy vertical="Preferred" horizontal="Preferred"/>
+    </prop>
+    <prop name="Font">
+     <prop name="ru_RU.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+     <prop name="en_US.utf8">Arial,10,-1,5,50,0,0,0,0,0</prop>
+    </prop>
+    <prop name="Location">121 232</prop>
+    <prop name="Size">48 95</prop>
+    <prop name="ObjectType">sw.ewo</prop>
+    <extended>
+     <prop type="ENUM" name="contextMenuPolicy">1</prop>
+     <prop type="ENUM" name="inputMethodHints">0</prop>
+     <prop type="ENUM" name="layoutDirection">0</prop>
+    </extended>
+   </properties>
+  </shape>
+ </shapes>
+</panel>
