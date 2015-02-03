@@ -1,19 +1,19 @@
 def is_number(string):
     index = 0
-    subString = ""
+    substring = ""
     if string.isdigit():
         return True
     if string[0] == '-':
-        subString = string[1:]
+        substring = string[1:]
     else:
-        subString = string
-    if '.' in subString:
-        index = subString.index('.')
-        subString = subString[:index] + subString[index+1:]
-    elif ',' in subString:
-        index = subString.index(',')
-        subString = subString[:index] + subString[index+1:]
-    if subString.isdigit():
+        substring = string
+    if '.' in substring:
+        index = substring.index('.')
+        substring = substring[:index] + substring[index + 1:]
+    elif ',' in substring:
+        index = substring.index(',')
+        substring = substring[:index] + substring[index + 1:]
+    if substring.isdigit():
         return True
     else:
         return False
