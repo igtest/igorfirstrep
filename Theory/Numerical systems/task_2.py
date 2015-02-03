@@ -1,24 +1,26 @@
 def to_binary(x):
-  res = ""
-  while x:
-    res += str(x%2)
-    x //= 2
-    
-  if len(res) == 1:
-      res += "000"
-  elif len(res) == 2:
-      res += "00"
-  elif len(res) == 3:
-      res += "0"
-      
-  return res[::-1]
+    res = ""
+    while x:
+        res += str(x % 2)
+        x //= 2
+
+    if len(res) == 1:
+        res += "000"
+    elif len(res) == 2:
+        res += "00"
+    elif len(res) == 3:
+        res += "0"
+
+    return res[::-1]
+
 
 def to_baseSeven(x):
     res = ""
     while x:
-        res += str(x%7)
+        res += str(x % 7)
         x //= 7
     return res[::-1]
+
 
 def binToDec(binNum):
     length = len(binNum)
@@ -27,8 +29,9 @@ def binToDec(binNum):
         if int(x) > 2:
             return -1
         length -= 1
-        value += int(x) * (2**length)
+        value += int(x) * (2 ** length)
     return value
+
 
 def chr_to_num(x):
     x = ord(x)
@@ -38,6 +41,7 @@ def chr_to_num(x):
         return x - ord("a") + 10
     else:
         return -1
+
 
 def hexToSeven(hexNum):
     length = len(hexNum)
@@ -49,5 +53,6 @@ def hexToSeven(hexNum):
         elif int(num) == -1:
             return "Bad value"
     return to_baseSeven(binToDec(value))
+
 
 print(hexToSeven("1a251ae"))

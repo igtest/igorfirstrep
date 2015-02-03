@@ -26,7 +26,7 @@ def read_xml():
             temp1.append(0)
         if float(temp1[0]) == 1.0 and len(temp1) == 6:
             temp1.append(1)
-        if len(elements_value) > 0:         # ставим нули элементам у которых нет атрибута Geometry
+        if len(elements_value) > 0:  # ставим нули элементам у которых нет атрибута Geometry
             if temp1[-3] == elements_value[-1][3] and temp1[-2] == elements_value[-1][4]:
                 if temp1[-1] == 0:
                     temp1 = [0, 0, 0, 0, 0, 0, 0]
@@ -34,15 +34,16 @@ def read_xml():
                     temp1 = [0, 0, 0, 0, 0, 0, 1.0]
         elements_value.append((each.attrib['Name'], temp[0], temp[1], temp1[-3], temp1[-2], temp1[-1]))
     print(elements_value, len(elements_value))
-# Удаление ненужных элементов------------------
+    # Удаление ненужных элементов------------------
     for all in elements:
         root[1].remove(all)
-#----------------------------------------------
+    # ----------------------------------------------
     for all in elements_value:
         root[1].append(make_xml(all))
 
     et = etree.ElementTree(root)
     et.write('myPanel.xml', pretty_print=True, xml_declaration=True, encoding='UTF-8')
+
 
 def make_xml(value):
     name = value[0]
@@ -179,5 +180,6 @@ def make_xml(value):
         properties.append(prop12)
         # Создание файла
         return root
+
 
 read_xml()

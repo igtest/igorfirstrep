@@ -8,6 +8,7 @@ def readInDic():
             d[key] = val
     return d
 
+
 def readInTuplesList():
     lst = []
     with open("phone.txt") as f:
@@ -17,15 +18,17 @@ def readInTuplesList():
             lst.append((number, name))
     return lst
 
+
 def readInTuplesListSort():
     lst = []
-    with open("1.txt") as f:   
+    with open("1.txt") as f:
         for line in f:
             number = line[1:8]
             name = line[11:-3]
             lst.append((number, name))
     lst.sort()
     return lst
+
 
 def get_nameInDic(phone):
     book = readInDic()
@@ -34,26 +37,30 @@ def get_nameInDic(phone):
     else:
         print("The number is not exist")
 
+
 def get_nameInTuplesList(phone):
     book = readInTuplesList()
-    numberList = [(line[0],line[1]) for line in book if line[0] == phone]
+    numberList = [(line[0], line[1]) for line in book if line[0] == phone]
     if numberList:
         print(numberList[0][1])
     else:
         print("The number is not exist")
+
+
 def get_nameGenerator(phone):
     val = []
     book = readInTuplesList()
-    numberList = ((line[0],line[1]) for line in book if line[0] == phone)
+    numberList = ((line[0], line[1]) for line in book if line[0] == phone)
     for i in numberList:
         val = i
     if val == '[]':
         print("The number is not exist")
     else:
         print(val[1])
-        
+
+
 import time
-##get_nameInTuplesList('2253431')
+# #get_nameInTuplesList('2253431')
 ##def compare_functions(f, g, v, arg):
 ##  i = 0
 ##  t1 = 0
@@ -88,5 +95,5 @@ get_nameInDic('2624117')
 ##        print(numberList[0][1])
 ##    else:
 ##        print("Not")
-    
+
 ##get_nameInTuplesList('7535669')

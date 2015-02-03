@@ -1,7 +1,7 @@
 def sieve(n):
     array = []
     array_temp = []
-    for x in range(2,n+1):
+    for x in range(2, n + 1):
         array.append(x)
     count_n = 0
     while True:
@@ -10,9 +10,9 @@ def sieve(n):
         if count_n >= len(array):
             break
         count = 1
-        while count<=len(array):
+        while count <= len(array):
             count += 1
-            key = count*p
+            key = count * p
             if key > max(array):
                 break
             if key in array_temp:
@@ -21,17 +21,19 @@ def sieve(n):
             array.remove(key)
     return array
 
-##print(sieve(1000))
+
+# #print(sieve(1000))
 
 
 def sieve_n(n):
-    numbers = list(range(2,n+1))
+    numbers = list(range(2, n + 1))
     step = 2
     while (step != numbers[-1]):
         for i in numbers:
-            if (i%step == 0 and i != step):
+            if (i % step == 0 and i != step):
                 numbers.remove(i)
-        step = numbers[numbers.index(step)+1]
+        step = numbers[numbers.index(step) + 1]
     return numbers
+
 
 print(sieve_n(20))
