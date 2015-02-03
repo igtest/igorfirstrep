@@ -1,4 +1,7 @@
 def fibn(n):
+    """
+    Iterative method Fibonacci numbers
+    """
     if n == 0: return n
     if n == 1: return n
     numFirst = 0
