@@ -1,6 +1,5 @@
 somelist = [x for x in range(-4, 20)]
 
-
 def my_map(Func, arg):
     result = []
     for i in arg:

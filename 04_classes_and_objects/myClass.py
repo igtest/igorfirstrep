@@ -1,8 +1,10 @@
+
 class Text:
     def __init__(self, filename):
         self.d = {}
         self.filename = filename
         self.wordException = set()
+        self.load_exception_set()
 
     def get_all_words(self):
         self.load_exception_set()
@@ -15,7 +17,7 @@ class Text:
                         if x.isalpha():
                             word += x
                         else:
-                            if len(word) >= 1 and word not in self.wordException:
+                            if len(word) > 1 and word not in self.wordException:
                                 if word not in self.d:
                                     self.d[word] = 1
                                 else:
@@ -29,11 +31,14 @@ class Text:
         return self.d
 
     def get_sorted_list(self, keys):
-        self.get_all_words()
-        sortedList = sorted(self.d.items(), key=lambda x: x[keys])
+        if len(self.d) == 0:
+            self.get_all_words()
+        sortedList = sorted(self.d.items(), key=lambda x: x[0])
         if keys == 1:
-            return sortedList[::-1]
+            sortedList.sort(key=lambda x:x[1], reverse=True)
+            return sortedList
         if keys == 0:
+            sortedList.sort(key=lambda x:x[1])
             return sortedList
 
     def get_most_popular_word(self):
@@ -52,12 +57,12 @@ class Text:
                     self.wordException.add(line[:-1])
         except IOError:
             f = open("ListExceptionWords.txt", 'w')
-            defaultWords = ['the', 'for', 'of', 'not', 'i', 't', 'to', 'no', 'in']
+            defaultWords = ['the', 'for', 'of', 'not', 'i', 'to', 'no', 'in']
             for line in defaultWords:
                 f.write(line + '\n')
             f.close()
 
-    def ge_exception_word_list(self):
+    def get_exception_word_list(self):
         return self.wordException
 
 
@@ -65,24 +70,26 @@ class TextHtml(Text):
     def get_all_words(self):
         if not self.d:
             word = ""
+            temp_tag = ""
             with open(self.filename, encoding="utf8") as f:
                 for line in f:
                     workLine = (line.lstrip()).lower()
-                    print(workLine)
                     flag = 0
                     for x in workLine:
                         if x == '<':
                             flag = 1
                             continue
-                        if x == '<':
+                        if x == '>':
                             flag = 0
+                            tag = temp_tag
                             continue
                         if flag == 1:
+                            temp_tag += x
                             continue
-                        if flag == 0 and x.isalpha():
+                        if flag == 0 and x.isalpha() and tag != "script":
                             word += x
                         else:
-                            if len(word) >= 3:
+                            if len(word) > 1 and word not in self.wordException:
                                 if word not in self.d:
                                     self.d[word] = 1
                                 else:
@@ -90,7 +97,7 @@ class TextHtml(Text):
                                     count += 1
                                     self.d[word] = count
                             word = ""
-                            continue
+                    temp_tag = ""
         else:
             pass
         return self.d
@@ -99,10 +106,14 @@ class TextHtml(Text):
 words = Text("1.txt")
 wordsFromHTML = TextHtml("new.html")
 # #words.loadExceptionSet()
-##print(words.getExceptionWordList())
 print(words.get_all_words())
-##print(words.getSortedList(1))
-##print(wordsFromHTML.getAllWords())
-
+print(words.get_sorted_list(1))
+print("*************************************")
+print("*************************************")
+print(wordsFromHTML.get_all_words())
+print("*************************************")
+print("*************************************")
+print(wordsFromHTML.get_sorted_list(1))
+#
 ## реализовать количество слов через len(words)
 ## реализовать множесто исключений с функцией добавления в множество
