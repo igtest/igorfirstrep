@@ -6,6 +6,10 @@ class Text:
         self.wordException = set()
         self.load_exception_set()
 
+    def __len__(self):
+        self.get_all_words()
+        return len(self.d)
+
     def get_all_words(self):
         self.load_exception_set()
         if not self.d:
@@ -102,18 +106,20 @@ class TextHtml(Text):
             pass
         return self.d
 
+if __name__ == '__main__':
+    words = Text("1.txt")
+    wordsFromHTML = TextHtml("new.html")
+    # #words.loadExceptionSet()
+    print(words.get_all_words())
+    print("Количество слов: " + str(len(wordsFromHTML)))
+    print(words.get_sorted_list(1))
+    print("*************************************")
+    print("*************************************")
+    print(wordsFromHTML.get_all_words())
+    print("*************************************")
+    print("*************************************")
+    print(wordsFromHTML.get_sorted_list(1))
 
-words = Text("1.txt")
-wordsFromHTML = TextHtml("new.html")
-# #words.loadExceptionSet()
-print(words.get_all_words())
-print(words.get_sorted_list(1))
-print("*************************************")
-print("*************************************")
-print(wordsFromHTML.get_all_words())
-print("*************************************")
-print("*************************************")
-print(wordsFromHTML.get_sorted_list(1))
 #
 ## реализовать количество слов через len(words)
 ## реализовать множесто исключений с функцией добавления в множество
