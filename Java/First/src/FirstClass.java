@@ -145,10 +145,25 @@ public class FirstClass {
         System.out.println("" + MaxPrimeNumber(n));
     }
 
+    private int fibo(int n) {
+        int result = 0;
+        if (n == 0) {
+            result = 0;
+        } else if (n == 1) {
+            result = 1;
+        } else {
+            result = fibo(n - 1) + fibo(n - 2);
+        }
+        return result;
+    }
+
+    public void PrintFibo(int n) {
+        System.out.println("Fibonacci number is " + fibo(n));
+    }
+
     public static void main(String[] args) {
         FirstClass a = new FirstClass();
-        a.PrintPrimeNumber(500);
-        a.PrintMaxNumber(500);
+        a.PrintFibo(10);
 
     }
 }
