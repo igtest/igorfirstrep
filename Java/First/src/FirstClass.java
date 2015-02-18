@@ -1,4 +1,6 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -159,6 +161,20 @@ public class FirstClass {
 
     public void PrintFibo(int n) {
         System.out.println("Fibonacci number is " + fibo(n));
+    }
+
+    public void fillSieve(){
+        int n;
+        boolean[] primes = new boolean[n];
+        Arrays.fill(primes, true);
+        primes[0] = primes[1] = false;
+        for (int i = 2; i < primes.length; i++){
+            if (primes[i]){
+                for (int j = 2; i*j<primes.length;j++){
+                    primes[i*j] = false;
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
