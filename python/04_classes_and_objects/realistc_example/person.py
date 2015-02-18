@@ -23,8 +23,8 @@ class Manager(Person):
         Person.giveRaise(self, percent + bonus)
     # def __getattr__(self, attr):
     #     return getattr(self.person, attr)
-    # def __repr__(self):
-    #     return str(self.person)
+    def __repr__(self):
+        return '[Manager: %s, %s]' % (self.name, self.pay)
 
 
 class Department:
@@ -49,14 +49,14 @@ if __name__ == '__main__':
     sue.giveRaise(.10)
     print(sue)
     tom = Manager('Tom Jones', 50000)
-    tom.giveRaise(.10)
-    print(tom.lastName())
+    # tom.giveRaise(.10)
+    # print(tom.lastName())
     print(tom)
-    print('--All three--')
-    for obj in (bob, sue, tom):
-        obj.giveRaise(.10)
-        print(obj)
-    development = Department(bob, sue)
-    development.addMember(tom)
-    development.giveRaises(.10)
-    development.showAll()
+    # print('--All three--')
+    # for obj in (bob, sue, tom):
+    #     obj.giveRaise(.10)
+    #     print(obj)
+    # development = Department(bob, sue)
+    # development.addMember(tom)
+    # development.giveRaises(.10)
+    # development.showAll()
