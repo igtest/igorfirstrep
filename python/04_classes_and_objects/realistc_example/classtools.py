@@ -18,6 +18,7 @@ if __name__ == '__main__':
     class SubTest(TopTest):
         pass
 
-    X, Y = TopTest(), SubTest()
+    X, Y, Z = TopTest(), SubTest(), TopTest()
     print(X)
     print(Y)
+    print(Z)
