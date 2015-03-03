@@ -36,13 +36,11 @@ class Square
         {
             string[] split = line.Split(new Char[] { ',', '(', ')', ' ' }, StringSplitOptions.RemoveEmptyEntries);
             int[] coordinat = new int[split.Length];
-            //Console.WriteLine("Numbers of length: " + split.Length);
             for (int i = 0; i < split.Length; i++)
             {
                 try
                 {
                     coordinat[i] = int.Parse(split[i]);
-                    // Console.WriteLine(split[i]);
                 }
                 catch (System.FormatException)
                 {
@@ -63,12 +61,9 @@ class Square
            P2 = new Point(coordinate[4], coordinate[5]);
            P3 = new Point(coordinate[6], coordinate[7]);
 
-           double dist1, dist2, dist3;
-           dist1 = GetDistance(P0, P1);
-           dist2 = GetDistance(P0, P2);
-           dist3 = GetDistance(P0, P3);
-
-           if (((dist1>dist2 && dist2 == dist3)||(dist1<dist2 && dist1 == dist3)||(dist1==dist2 && dist3>dist1))&&
+           if (((GetDistance(P0, P1) > GetDistance(P0, P2) && GetDistance(P0, P2) == GetDistance(P0, P3)) ||
+               (GetDistance(P0, P1) < GetDistance(P0, P2) && GetDistance(P0, P1) == GetDistance(P0, P3)) ||
+               (GetDistance(P0, P1) == GetDistance(P0, P2) && GetDistance(P0, P3) > GetDistance(P0, P1))) &&
                (GetDistance(P1, P0) > GetDistance(P1, P2) && GetDistance(P1, P2)==GetDistance(P1,P3))||
                (GetDistance(P1,P0)<GetDistance(P1,P2) && GetDistance(P1,P0)==GetDistance(P1,P3))||
                (GetDistance(P1,P0)==GetDistance(P1,P2)&&GetDistance(P1,P3)>GetDistance(P1,P0)))
