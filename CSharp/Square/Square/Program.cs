@@ -9,7 +9,6 @@ using System.IO;
             try {
             using (StreamReader sReader = File.OpenText(args[0]))
             
-            
                 while (!sReader.EndOfStream)
                 {
                         
@@ -17,8 +16,8 @@ using System.IO;
                     if (lineOfText != null)
                     {
                         Console.WriteLine(a.isSquare(lineOfText));
-                    
                     }
+
                 }
             }
             catch (System.IndexOutOfRangeException)
@@ -30,17 +29,17 @@ using System.IO;
 class Square
     {
     int[] coordinate;
-    Point P0, P1, P2, P3;
+    Point[] point = new Point[4];
 
         int [] GetCoordinate(string line)
         {
             string[] split = line.Split(new Char[] { ',', '(', ')', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-            int[] coordinat = new int[split.Length];
+            int[] coordinates = new int[split.Length];
             for (int i = 0; i < split.Length; i++)
             {
                 try
                 {
-                    coordinat[i] = int.Parse(split[i]);
+                    coordinates[i] = int.Parse(split[i]);
                 }
                 catch (System.FormatException)
                 {
@@ -48,7 +47,7 @@ class Square
                     break;
                 }
             }
-            return coordinat;
+            return coordinates;
         }
 
        public bool isSquare(string String)
@@ -56,17 +55,18 @@ class Square
           
            coordinate = GetCoordinate(String);
            
-           P0 = new Point(coordinate[0], coordinate[1]);
-           P1 = new Point(coordinate[2], coordinate[3]);
-           P2 = new Point(coordinate[4], coordinate[5]);
-           P3 = new Point(coordinate[6], coordinate[7]);
+           for (int i = 0, y = 0; i < coordinate.Length; i++, y++ )
+           {
+               point[y] = new Point(coordinate[i], coordinate[++i]);
+           }
+           
 
-           if (((GetDistance(P0, P1) > GetDistance(P0, P2) && GetDistance(P0, P2) == GetDistance(P0, P3)) ||
-               (GetDistance(P0, P1) < GetDistance(P0, P2) && GetDistance(P0, P1) == GetDistance(P0, P3)) ||
-               (GetDistance(P0, P1) == GetDistance(P0, P2) && GetDistance(P0, P3) > GetDistance(P0, P1))) &&
-               (GetDistance(P1, P0) > GetDistance(P1, P2) && GetDistance(P1, P2)==GetDistance(P1,P3))||
-               (GetDistance(P1,P0)<GetDistance(P1,P2) && GetDistance(P1,P0)==GetDistance(P1,P3))||
-               (GetDistance(P1,P0)==GetDistance(P1,P2)&&GetDistance(P1,P3)>GetDistance(P1,P0)))
+           if (((GetDistance(point[0], point[1]) > GetDistance(point[0], point[2]) && GetDistance(point[0], point[2]) == GetDistance(point[0], point[3])) ||
+               (GetDistance(point[0], point[1]) < GetDistance(point[0], point[2]) && GetDistance(point[0], point[1]) == GetDistance(point[0], point[3])) ||
+               (GetDistance(point[0], point[1]) == GetDistance(point[0], point[2]) && GetDistance(point[0], point[3]) > GetDistance(point[0], point[1]))) &&
+               (GetDistance(point[1], point[0]) > GetDistance(point[1], point[2]) && GetDistance(point[1], point[2])==GetDistance(point[1],point[3]))||
+               (GetDistance(point[1],point[0])<GetDistance(point[1],point[2]) && GetDistance(point[1],point[0])==GetDistance(point[1],point[3]))||
+               (GetDistance(point[1],point[0])==GetDistance(point[1],point[2])&&GetDistance(point[1],point[3])>GetDistance(point[1],point[0])))
            {
                return true;
            }
