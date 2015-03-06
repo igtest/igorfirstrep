@@ -61,23 +61,42 @@ class Square
             return coordinates;
         }
 
+       void SortPoin(Point[]point)
+        {
+           Point temp;
+           for(int i = 0; i<point.Length-1; i++)
+           {
+              for (int j = i+1;j<point.Length;j++ )
+              {
+                  if(point[i]>point[j])
+                  {
+                      temp = new Point(point[j]);
+                      point[j] = point[i];
+                      point[i] = temp;
+                  }
+              }
+           }
+
+        }
+
        public bool isSquare(string String)
        {
-          
+           
            coordinate = GetCoordinate(String);
            
            for (int i = 0, y = 0; i < coordinate.Length; i++, y++ )
            {
                point[y] = new Point(coordinate[i], coordinate[++i]);
            }
-           
 
-           if (((GetDistance(point[0], point[1]) > GetDistance(point[0], point[2]) && GetDistance(point[0], point[2]) == GetDistance(point[0], point[3])) ||
-               (GetDistance(point[0], point[1]) < GetDistance(point[0], point[2]) && GetDistance(point[0], point[1]) == GetDistance(point[0], point[3])) ||
-               (GetDistance(point[0], point[1]) == GetDistance(point[0], point[2]) && GetDistance(point[0], point[3]) > GetDistance(point[0], point[1]))) &&
-               (GetDistance(point[1], point[0]) > GetDistance(point[1], point[2]) && GetDistance(point[1], point[2])==GetDistance(point[1],point[3]))||
-               (GetDistance(point[1],point[0])<GetDistance(point[1],point[2]) && GetDistance(point[1],point[0])==GetDistance(point[1],point[3]))||
-               (GetDistance(point[1],point[0])==GetDistance(point[1],point[2])&&GetDistance(point[1],point[3])>GetDistance(point[1],point[0])))
+           SortPoin(point);
+
+           double SquareSide = GetDistance(point[0], point[1]);
+           double SquareDiagonal = GetDistance(point[0], point[3]);
+
+           if (SquareSide == GetDistance(point[0], point[2]) && SquareSide == GetDistance(point[2], point[3]) &&
+               SquareSide == GetDistance(point[3], point[1]) && SquareDiagonal == GetDistance(point[2], point[1]))
+
            {
                return true;
            }
@@ -90,9 +109,8 @@ class Square
 
         double GetDistance(Point A, Point B)
        {
-           return Math.Pow((B.X - A.X), 2) + Math.Pow((B.Y - A.Y), 2);
+           return Math.Pow(Math.Abs(B.X - A.X), 2) + Math.Pow(Math.Abs(B.Y - A.Y), 2);
        }
-
 
     }
 class Point
@@ -104,9 +122,38 @@ class Point
         X = 0;
         Y = 0;
     }
+    public Point(Point obj)
+    {
+        this.X = obj.X;
+        this.Y = obj.Y;
+    }
     public Point(int x, int y)
     {
         X = x;
         Y = y;
     }
+
+    public static bool operator>(Point A, Point B)
+    {
+        if (A.X > B.X)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public static bool operator<(Point A, Point B)
+    {
+        if (A.X < B.X)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
