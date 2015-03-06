@@ -29,8 +29,8 @@ using System.Text.RegularExpressions;
         static bool checkLine(string line)
         {
             
-            Regex regex = new Regex(@"^[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)]");
-            Regex regexWithSpace = new Regex(@"^[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)]");
+            Regex regex = new Regex(@"^[(]([0-9]),([0-9])[)],[(]([0-9]),([0-9])[)],[(]([0-9]),([0-9])[)],[(]([0-9]),([0-9])[)]");
+            Regex regexWithSpace = new Regex(@"^[(]([0-9]),([0-9])[)],\s[(]([0-9]),([0-9])[)],\s[(]([0-9]),([0-9])[)],\s[(]([0-9]),([0-9])[)]");
             if (regex.IsMatch(line) || regexWithSpace.IsMatch(line))
             {
                 return true;
