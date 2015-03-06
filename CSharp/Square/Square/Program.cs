@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text.RegularExpressions;
 
     class Program
     {
@@ -13,7 +14,7 @@ using System.IO;
                 {
                         
                     string lineOfText = sReader.ReadLine();
-                    if (lineOfText != null)
+                    if (lineOfText != null && checkLine(lineOfText))
                     {
                         Console.WriteLine(a.isSquare(lineOfText));
                     }
@@ -22,9 +23,25 @@ using System.IO;
             }
             catch (System.IndexOutOfRangeException)
             {
-                Console.WriteLine("Input filename...");
+                Console.WriteLine("Input file argument...");
             }
-                }
+         }
+        static bool checkLine(string line)
+        {
+            
+            Regex regex = new Regex(@"^[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)],[(]([0-9]|10),([0-9]|10)[)]");
+            Regex regexWithSpace = new Regex(@"^[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)],\s[(]([0-9]|10),([0-9]|10)[)]");
+            if (regex.IsMatch(line) || regexWithSpace.IsMatch(line))
+            {
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Input data is incorrect");
+                return false;
+            }
+           
+        }
     }
 class Square
     {
@@ -37,15 +54,9 @@ class Square
             int[] coordinates = new int[split.Length];
             for (int i = 0; i < split.Length; i++)
             {
-                try
-                {
-                    coordinates[i] = int.Parse(split[i]);
-                }
-                catch (System.FormatException)
-                {
-                    Console.WriteLine("Check imput data...");
-                    break;
-                }
+              
+                coordinates[i] = int.Parse(split[i]);
+              
             }
             return coordinates;
         }
