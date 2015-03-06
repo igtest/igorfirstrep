@@ -61,7 +61,7 @@ class Square
             return coordinates;
         }
 
-       void SortPoin(Point[]point)
+       void SortPoint(Point[]point)
         {
            Point temp;
            for(int i = 0; i<point.Length-1; i++)
@@ -89,7 +89,7 @@ class Square
                point[y] = new Point(coordinate[i], coordinate[++i]);
            }
 
-           SortPoin(point);
+           SortPoint(point);
 
            double SquareSide = GetDistance(point[0], point[1]);
            double SquareDiagonal = GetDistance(point[0], point[3]);
