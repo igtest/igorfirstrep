@@ -21,10 +21,10 @@ class Panel():
         if len(key) != 0:
             self.key = key
         else:
-            self.key = 'TN_elems/Valve.pnl' #we change this
+            self.key = 'TN_elems/Valve.pnl'  #change this
 
     def get_elements(self):
-        for prop in self.root.findall("shapes/reference//prop/[@name='FileName']"): #find all elements with key
+        for prop in self.root.findall("shapes/reference//prop/[@name='FileName']"):  #find all elements with key
             text = prop.text
             if text == self.key:
                 yield prop

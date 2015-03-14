@@ -14,5 +14,13 @@ def fibn(n):
         numSecond = result 
         count += 1
     return result
+
+def fib(n):
+    a,b = 0,1
+    for i in range(n):
+        a,b =b,a+b
+    return a
+
 x = fibn(10)
-print(x)
+y = fib(10)
+print(x, y)
