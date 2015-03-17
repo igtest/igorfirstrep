@@ -37,7 +37,7 @@ using System.Text.RegularExpressions;
             }
             else
             {
-                Console.WriteLine("Input data is incorrect");
+                Console.WriteLine("False");
                 return false;
             }
            
@@ -109,7 +109,7 @@ class Square
 
         double GetDistance(Point A, Point B)
        {
-           return Math.Pow(Math.Abs(B.X - A.X), 2) + Math.Pow(Math.Abs(B.Y - A.Y), 2);
+           return Math.Pow(B.X - A.X, 2) + Math.Pow(B.Y - A.Y, 2);
        }
 
     }
@@ -139,6 +139,17 @@ class Point
         {
             return true;
         }
+        else if (A.X == B.X)
+        {
+            if (A.Y > B.Y)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         else
         {
             return false;
@@ -149,6 +160,17 @@ class Point
         if (A.X < B.X)
         {
             return true;
+        }
+        else if (A.X == B.X)
+        {
+            if (A.Y < B.Y)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         else
         {
