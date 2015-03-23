@@ -124,7 +124,7 @@ class Analyse():
         return len(count)
 
     def countReadMessagesRemovedLastMonth(self):
-        """Count read removed Messages"""
+        """Count read removed Messages for last month"""
 
         last_set = [message for message in self.set_of_days[-1] if self.isReadMessage(message) == True and self.isLastMonth(message) == True]
         all_mes = set(message.message_id for message in self.getNextMessage()if self.isReadMessage(message) == True and self.isLastMonth(message) == True)
@@ -132,11 +132,7 @@ class Analyse():
             if message.message_id in all_mes:
                 all_mes.remove(message.message_id)
         return len(all_mes)
-    # def countReadMessagesRemovedLastMonth(self):
-    #     """Count read removed Messages for last month"""
 
-    def countUnreadMessagesRemoved(self):
-        """Count unread removed Messages"""
     def countUnreadMessagesRemovedLastMonth(self):
         """Count unread removed Messages for last month"""
         last_set = [message for message in self.set_of_days[-1] if self.isReadMessage(message) == False and self.isLastMonth(message) == True]
