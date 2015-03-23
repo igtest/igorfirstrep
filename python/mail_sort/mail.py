@@ -3,18 +3,18 @@ import copy
 import random
 import itertools
 
-number_of_messages = 10
+
 
 now = time.time()
-two_week = 1209600
-one_month = 2629743
+two_week = 1209600 # two week in Unix epoch time
+one_month = 2629743 #one month in Unix epoch time
 two_week_ago = now - two_week
 two_month_ago = now - one_month*2
 
 
 message_list1 = []
 message_list2 = []
-mails = ['i@mail.ru', 'ibrikin@gmail.com', 'example@example.com', 'foo@yandex.ru']
+mails = ['i@mail.ru', 'somebody@gmail.com', 'example@example.com', 'foo@yandex.ru']
 
 class Message():
     def __init__(self, date, message_from, unread=True):
@@ -23,7 +23,6 @@ class Message():
         self.message_from = message_from
         self.unread = unread
         self.read_key = 0
-        self.count = 1
     def __repr__(self):
         return 'Message from {0} on {1}. ID {2}. {3}, key={4}'.format(self.message_from,
         time.ctime(self.date), self.message_id, self.unread, self.read_key)
@@ -45,6 +44,7 @@ class Message():
         return self.read_key
 
 def generate_message_set():
+    number_of_messages = 10 #number of generate messages
     random_num_message = random.randint(1, number_of_messages)
     for i in range(random_num_message):
         random_date = random.randint(int(two_month_ago), int(two_week_ago))
@@ -52,7 +52,7 @@ def generate_message_set():
         message_list1.append(Message(random_date, mail))
 
 def todays_message_set():
-    for i in range(random.randint(1,int(len(message_list2)//2))):
+    for i in range(random.randint(0,int(len(message_list2)//2))):
         del message_list2[i]
 
     for i in range(random.randint(1,14)):
@@ -165,15 +165,35 @@ if __name__ == '__main__':
     print('++++++++++++++++++++++')
     print(message_list2)
     print(len(message_list2))
-    message_list3 = [1,2,3,4,5]
+    # for test
+    a = Message(time.mktime(time.strptime('Fri Feb 20 13:48:23 2015')),mails[0], False)
+    b = Message(time.mktime(time.strptime('Fri Mar 13 13:48:23 2015')),mails[0], True)
+    c = Message(time.mktime(time.strptime('Sun Mar 8 13:48:23 2015')),mails[0], True)
+    ab = Message(time.mktime(time.strptime('Fri Mar 20 13:48:23 2015')),mails[1], False)
+    ac = Message(time.mktime(time.strptime('Sun Mar 22 13:48:23 2015')),mails[0], False)
+    aa = Message(time.mktime(time.strptime('Wed Mar 18 13:48:23 2015')),mails[0], False)
+    list1 = [a,c]
+    list2 = [b,ab,ac,aa]
+    #
     analyse = Analyse(message_list1, message_list2)
-    print("Получил всего сообщений: ", analyse.countMessage())
-    print("Всего прочитанных сообщений: ", analyse.countReadMessages())
-    print("Всего прочитанных сообщений за последний месяц: ", analyse.countReadMessagesLastMonth())
-    print("Всего непрочитанных сообщений: ", analyse.countUnreadMessages())
-    print("Всего непрочитанных сообщений за последний месяц: ", analyse.countUnreadMessagesLastMonth())
-    print("Всего прочитанных сообщений и удаленных за последний месяц: ",analyse.countReadMessagesRemovedLastMonth())
-    print("Всего непрочитанных сообщений и удаленных за последний месяц", analyse.countUnreadMessagesRemovedLastMonth())
-    print("Получено сообщений от ibrikin@gmail.com: ", analyse.countMessagesFrom('ibrikin@gmail.com'))
-    print("Получено сообщений от ibrikin@gmail.com за последний месяц: ", analyse.countMessagesFromLastMonth('ibrikin@gmail.com'))
-
+    analyse2 = Analyse(list1, list2) # for test
+    # print("Total messages: ", analyse.countMessage())
+    # print("Total read messages: ", analyse.countReadMessages())
+    print("Total read messages for last month: ", analyse.countReadMessagesLastMonth())
+    # print("Total unread messages: ", analyse.countUnreadMessages())
+    print("Total unread messages for last month: ", analyse.countUnreadMessagesLastMonth())
+    print("Total read messages and removed for last month: ",analyse.countReadMessagesRemovedLastMonth())
+    print("Total unread messaged and removed for last month: ", analyse.countUnreadMessagesRemovedLastMonth())
+    print("Received from somebody@gmail.com: ", analyse.countMessagesFrom('somebody@gmail.com'))
+    print("Received from somebody@gmail.com for last month: ", analyse.countMessagesFromLastMonth('somebody@gmail.com'))
+    print("==================================================================")
+    # for test
+    print("Total messages: ", analyse2.countMessage())
+    print("Total read messages: ", analyse2.countReadMessages())
+    print("Total read messages for last month: ", analyse2.countReadMessagesLastMonth())
+    print("Total unread messages: ", analyse2.countUnreadMessages())
+    print("Total unread messages for last month: ", analyse2.countUnreadMessagesLastMonth())
+    print("Total read messages and removed for last month: ",analyse2.countReadMessagesRemovedLastMonth())
+    print("Total unread messaged and removed for last month: ", analyse2.countUnreadMessagesRemovedLastMonth())
+    print("Received from somebody@gmail.com: ", analyse2.countMessagesFrom('somebody@gmail.com'))
+    print("Received from somebody@gmail.com for last month: ", analyse2.countMessagesFromLastMonth('somebody@gmail.com'))
